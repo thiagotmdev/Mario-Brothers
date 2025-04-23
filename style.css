@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    padding: 32px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(40, 50, 166, 1) 50%, rgba(29, 169, 224, 1) 88%);
+}
+
+.main-menu img {
+    width: 50px;
+    height: auto;
+}
+
+.main-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.main-menu a:hover {
+    color: #C31111;
+    transition: .3s ease-in-out;
+}
+
+.smart-menu{
+    display: none;
+}
+
+.smart-menu-int{
+    display: none;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    margin-top: 10%;
+    justify-content: space-around;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+}
+
+.info img {
+    width: 350px;
+    height: auto;
+}
+
+h3 {
+    color: #FFFFFF;
+}
+
+.container-servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/servicos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services-mask{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 12, 16, 0.7);
+}
+
+h2{
+    width: 1080px;
+    text-align: justify;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000000;
+    margin-top: 150px;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.contact-button {
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #C31111;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    opacity: .7;
+}
+
+.contact-button:active {
+    opacity: .5;
+}
+
+.submit {
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #C31111;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    opacity: .7;
+}
+
+.submit:active {
+    opacity: .5;
+}
+
+video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.mascara-video {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+.mario-bros img {
+    width: 350px;
+}
+
+.whatsapp {
+    position: absolute;
+    width: 50px;
+    bottom: 80px;
+    right: 50px;
+}
+.form-mask {
+    width: 100vw;
+    height: 95.5vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 3;
+    display: none;
+    top: 0;
+    position: fixed;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 380px;
+    background-color: #CECECE;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    left: -350px;
+    position: fixed;
+    z-index: 4;
+}
+
+form input {
+    padding: 5px;
+    outline-color: #18D80F;
+}
+
+form textarea {
+    width: 100%;
+    height: 200px;
+    outline-color: #18D80F;
+}
+
+footer {
+    width: 100vw;
+    height: 50px;
+    background: red;
+    bottom: 0;
+    position: absolute;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 1400px) {
+
+    .container {
+        margin-top: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    h2{
+        width: 550px;
+    }
+
+
+    p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .whatsapp{
+        bottom: 130px;
+        right: 150px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .container {
+        margin-top: 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h3 {
+        width: 350px;
+    }
+
+    h2{
+        width: 350px;
+    }
+
+    p {
+        display: none;
+    }
+
+    .mario-bros img {
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    form {
+        transform: translate(-30%);
+        width: 280px;
+    }
+
+    .form-mask {
+        height: 94%;
+    }
+
+    .main-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .smart-menu{
+        color: #000000;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .main-menu a{
+        display: none;
+    }
+
+    .main-menu a {
+        font-size: 15px;
+    }
+    .smart-menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .smart-menu-int{
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        padding: 20px;
+        background: linear-gradient(90deg, rgba(40, 50, 166, 1) 50%, rgba(29, 169, 224, 1) 88%);
+        height: auto;
+        border-radius: 0px 0px 0px 5px;
+        right: -150px;
+        transition: all 0.3s ease;
+    }
+
+    .smart-menu-int a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .whatsapp{
+        bottom: 80px;
+        right: 50px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
